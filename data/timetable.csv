@@ -1,0 +1,16 @@
+batch,day,start_time,end_time,subject,room,faculty
+CSE-A,Monday,09:00,10:00,Data Structures,CS-101,Dr. Meera Rao
+CSE-A,Tuesday,10:00,11:00,Database Systems,CS-204,Prof. Arjun Shah
+CSE-A,Wednesday,11:00,12:00,Operating Systems,CS-105,Dr. Nisha Iyer
+CSE-A,Thursday,13:00,14:00,Computer Networks,CS-302,Prof. Karan Patel
+CSE-A,Friday,14:00,15:00,Software Engineering,CS-201,Dr. Leena Menon
+CSE-B,Monday,10:00,11:00,Database Systems,CS-204,Prof. Arjun Shah
+CSE-B,Tuesday,09:00,10:00,Data Structures,CS-101,Dr. Meera Rao
+CSE-B,Wednesday,13:00,14:00,Computer Networks,CS-302,Prof. Karan Patel
+CSE-B,Thursday,11:00,12:00,Operating Systems,CS-105,Dr. Nisha Iyer
+CSE-B,Friday,15:00,16:00,Software Engineering,CS-201,Dr. Leena Menon
+ECE-A,Monday,11:00,12:00,Digital Logic,EC-110,Dr. Vikram Desai
+ECE-A,Tuesday,13:00,14:00,Signals and Systems,EC-215,Prof. Sana Kapoor
+ECE-A,Wednesday,09:00,10:00,Electronic Circuits,EC-108,Dr. Ritu Bose
+ECE-A,Thursday,14:00,15:00,Microprocessors,EC-301,Prof. Dev Malhotra
+ECE-A,Friday,10:00,11:00,Communication Systems,EC-207,Dr. Anil Thomas
