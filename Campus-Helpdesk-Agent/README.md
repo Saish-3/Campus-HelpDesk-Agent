@@ -249,3 +249,5 @@ For standalone global registration in `~/.gemini/config/mcp_config.json`:
 ## License
 
 This project is developed for educational and experimental purposes as part of the Campus Helpdesk Agent coursework.
+
+<!-- Verified Hook Path Bugfix Applied -->
