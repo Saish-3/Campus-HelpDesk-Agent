@@ -1,0 +1,106 @@
+Deleted branch feature/skill-tests (was c6d1a08).
+Deleted branch feature/mcp-server (was 7fc6bb3).
+Deleted branch bugfix/hook-path (was 6018416).
+================================================================================
+STEP 1: Create three linked worktrees
+================================================================================
+Preparing worktree (new branch 'feature/skill-tests')
+HEAD is now at cf09a37 Task 2: Add evidence/partD/jsonrpc.md with real MCP JSON-RPC logs and npm view output
+Preparing worktree (new branch 'feature/mcp-server')
+HEAD is now at cf09a37 Task 2: Add evidence/partD/jsonrpc.md with real MCP JSON-RPC logs and npm view output
+Preparing worktree (new branch 'bugfix/hook-path')
+HEAD is now at cf09a37 Task 2: Add evidence/partD/jsonrpc.md with real MCP JSON-RPC logs and npm view output
+
+================================================================================
+STEP 2: Commit changes in each worktree (with conflicting edits on README.md line 1)
+================================================================================
+[bugfix/hook-path b1146db] fix(hooks): update hook path resolution documentation
+ 1 file changed, 2 insertions(+)
+[feature/skill-tests f079d66] feat(skills): add enhanced skill test suite and documentation
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[feature/mcp-server eaa8822] feat(mcp): upgrade enterprise stdio mcp server
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+================================================================================
+STEP 3: Merge worktree branches into main and resolve conflict
+================================================================================
+--- Merging bugfix/hook-path into main ---
+Merge made by the 'ort' strategy.
+ Campus-Helpdesk-Agent/README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+--- Merging feature/skill-tests into main ---
+Auto-merging Campus-Helpdesk-Agent/README.md
+Merge made by the 'ort' strategy.
+ Campus-Helpdesk-Agent/README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+--- Merging feature/mcp-server into main (expecting conflict) ---
+Auto-merging Campus-Helpdesk-Agent/README.md
+CONFLICT (content): Merge conflict in Campus-Helpdesk-Agent/README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+>>> Conflict successfully triggered as expected! <<<
+--- Conflict markers in Campus-Helpdesk-Agent/README.md (first 10 lines) ---
+<<<<<<< HEAD
+# Campus Helpdesk Agent (Enhanced Skill Test Suite)
+=======
+# Campus Helpdesk Agent (Enterprise MCP Server Integration)
+>>>>>>> feature/mcp-server
+
+An agentic AI assistant system designed for university campus workflows, built with the **Google Antigravity Customization Framework** and the **Model Context Protocol (MCP)**.
+
+The project demonstrates an end-to-end multi-tier architecture consisting of:
+1. **Agent Skills**: Verified class timetable lookup with zero-hallucination guardrails.
+
+--- Resolving conflict by combining both feature titles ---
+# Campus Helpdesk Agent (Enhanced Skill Tests & Enterprise MCP Server)
+
+An agentic AI assistant system designed for university campus workflows, built with the **Google Antigravity Customization Framework** and the **Model Context Protocol (MCP)**.
+
+The project demonstrates an end-to-end multi-tier architecture consisting of:
+[main 98d2e9e] Merge branch 'feature/mcp-server' into main (resolved line 1 README conflict)
+>>> Conflict resolved and committed successfully! <<<
+
+================================================================================
+STEP 4: Display git worktree list and git log --oneline --graph --all
+================================================================================
+--- git worktree list ---
+/Users/saish/Documents/Coding/LANGUAGES/aitools/ass             98d2e9e [main]
+/Users/saish/Documents/Coding/LANGUAGES/aitools/wt-hook-path    b1146db [bugfix/hook-path]
+/Users/saish/Documents/Coding/LANGUAGES/aitools/wt-mcp-server   eaa8822 [feature/mcp-server]
+/Users/saish/Documents/Coding/LANGUAGES/aitools/wt-skill-tests  f079d66 [feature/skill-tests]
+
+--- git log --oneline --graph --all (last 10 commits) ---
+*   98d2e9e Merge branch 'feature/mcp-server' into main (resolved line 1 README conflict)
+|\  
+| * eaa8822 feat(mcp): upgrade enterprise stdio mcp server
+* |   710273f Merge branch 'feature/skill-tests' into main
+|\ \  
+| * | f079d66 feat(skills): add enhanced skill test suite and documentation
+| |/  
+* |   1a3be48 Merge branch 'bugfix/hook-path' into main
+|\ \  
+| |/  
+|/|   
+| * b1146db fix(hooks): update hook path resolution documentation
+|/  
+* cf09a37 Task 2: Add evidence/partD/jsonrpc.md with real MCP JSON-RPC logs and npm view output
+* be3ad85 Task 1: Add evidence/partB/tests.md with test execution and skill trigger evaluation
+* 8cff041 Configure Claude Code plugin, slash command, and threat model
+* 0bf1ea3 Move plugin and marketplace manifests into .claude-plugin directories
+
+================================================================================
+STEP 5: Demonstrate refusal when checking out 'main' in another worktree
+================================================================================
+$ git worktree add ../wt-dup main
+Preparing worktree (checking out 'main')
+fatal: 'main' is already used by worktree at '/Users/saish/Documents/Coding/LANGUAGES/aitools/ass'
+Exit code: 128
+
+================================================================================
+STEP 6: Clean up worktrees with git worktree remove and git worktree prune
+================================================================================
+
+--- git worktree list after cleanup ---
+/Users/saish/Documents/Coding/LANGUAGES/aitools/ass  98d2e9e [main]
+
+All worktree operations and cleanup completed successfully!
