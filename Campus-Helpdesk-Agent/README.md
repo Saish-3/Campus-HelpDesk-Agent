@@ -1,4 +1,4 @@
-# Campus Helpdesk Agent (Enhanced Skill Test Suite)
+# Campus Helpdesk Agent (Enhanced Skill Tests & Enterprise MCP Server)
 
 An agentic AI assistant system designed for university campus workflows, built with the **Google Antigravity Customization Framework** and the **Model Context Protocol (MCP)**.
 
