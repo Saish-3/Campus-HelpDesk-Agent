@@ -1,4 +1,4 @@
-# Campus Helpdesk Agent
+# Campus Helpdesk Agent (Enterprise MCP Server Integration)
 
 An agentic AI assistant system designed for university campus workflows, built with the **Google Antigravity Customization Framework** and the **Model Context Protocol (MCP)**.
 
